@@ -426,7 +426,7 @@ strong {
 
 .trust-section img,
 .proof-section img {
-  max-width: min(90%, 700px);
+  max-width: min(100%, 700px);
   margin: 0 auto;
   display: block;
 }
