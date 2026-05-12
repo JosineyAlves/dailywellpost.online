@@ -82,12 +82,8 @@ strong {
   }
 }
 
-.section {
-  padding-top: 3rem;
-}
-
 .esconder {
-  display: none;
+  display: non;
 }
 
 /* ── Typography ── */
@@ -198,12 +194,14 @@ strong {
   color: #000000;
   background: #fff700;
   border: none;
-  border-radius: 0;
-  transition: filter 0.2s ease, transform 0.15s ease;
+  border-radius: 15px;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.596);
+  transition: filter 0.2s ease, transform 0.15s ease, box-shadow 0.2s ease;
 }
 
 .cta:hover {
-  filter: brightness(1.1);
+  filter: brightness(1.08);
+  box-shadow: 0 10px 36px rgba(0, 0, 0, 0.36);
 }
 
 .cta:active {
@@ -470,7 +468,7 @@ strong {
 
 .trust-section img,
 .proof-section img {
-  max-width: min(90%, 700px);
+  max-width: min(100%, 700px);
   margin: 0 auto;
   display: block;
 }
@@ -479,7 +477,7 @@ strong {
   max-width: 800px;
   margin-left: auto;
   margin-right: auto;
-  padding: 0.75rem 0;
+  padding: 0.75rem 0 0;
 }
 
 /* ── Footer ── */
