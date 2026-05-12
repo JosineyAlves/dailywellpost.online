@@ -87,7 +87,7 @@ strong {
 }
 
 .esconder {
-  display: non;
+  display: none;
 }
 
 /* ── Typography ── */
@@ -105,6 +105,10 @@ strong {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
 }
 
 .hero .badge {
@@ -455,7 +459,10 @@ strong {
 
 /* ── Trust / Social Proof ── */
 .trust-section {
+  max-width: 800px;
   margin-top: 2rem;
+  margin-left: auto;
+  margin-right: auto;
   padding: 0.5rem 0;
   border-top: 2px solid var(--card-border);
   border-bottom: 2px solid var(--card-border);
@@ -463,12 +470,15 @@ strong {
 
 .trust-section img,
 .proof-section img {
-  max-width: min(100%, 700px);
+  max-width: min(90%, 700px);
   margin: 0 auto;
   display: block;
 }
 
 .proof-section {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
   padding: 0.75rem 0;
 }
 
