@@ -372,7 +372,7 @@ strong {
 
 .bonus-title {
   font-family: var(--font-display);
-  font-size: clamp(1.2rem, 3vw, 1.5rem);
+  font-size: clamp(1.5rem, 3.5vw, 2rem);
   text-transform: uppercase;
   letter-spacing: 0.03em;
   color: var(--text);
