@@ -4,7 +4,7 @@
  <head>
   <meta charset="utf-8" />
   <meta content="width=device-width,initial-scale=1" name="viewport" />
-  <title>SlimSoda - adv1</title>
+  <title>SlimSoda - GA - adv1</title>
   <meta content="noindex" name="robots" />
   <link href="https://fonts.googleapis.com" rel="preconnect" />
   <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
@@ -1894,15 +1894,6 @@
      answers = [],
      step = 0;
 
-    function withParams(u) {
-     try {
-      var qs = location.search.replace(/^\?/, "");
-      if (!qs || u === "#") return u;
-      return u + (u.indexOf("?") > -1 ? "&" : "?") + qs;
-     } catch (e) {
-      return u;
-     }
-    }
     function open() {
      answers = [];
      step = 0;
@@ -2026,7 +2017,7 @@
       fmtDate() +
       "</b></p>" +
       '<a class="ssq-cta" href="' +
-      withParams(CHECKOUT_URL) +
+      CHECKOUT_URL +
       '">UNLOCK MY 3 FREE TUBS NOW \u2192</a>' +
       "</div>";
     }
