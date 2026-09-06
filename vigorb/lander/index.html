@@ -47,6 +47,18 @@
                 gap: 28px;
             }
 
+            .video-box {
+                width: 100%;
+                max-width: 720px;   /* limita a largura do video 16:9 (evita ocupar a tela toda) */
+                margin: 0 auto;
+            }
+
+            .video-box vturb-smartplayer {
+                display: block;
+                width: 100%;
+                max-height: 80vh;   /* trava a altura em creativos verticais */
+            }
+
             .top-text {
                 font-size: 16px;
                 font-weight: 700;
@@ -94,10 +106,9 @@
         <div class="page">
             <div class="top-text">Watch until the end to access</div>
 
-            <vturb-smartplayer
-                id="ab-6a9ca59083bc353a458ef69c"
-                style="display: block; margin: 0 auto; width: 100%"
-            ></vturb-smartplayer>
+            <div class="video-box">
+                <vturb-smartplayer id="ab-6a9ca59083bc353a458ef69c"></vturb-smartplayer>
+            </div>
             <script type="text/javascript">
                 var s = document.createElement("script");
                 (s.src =
