@@ -260,8 +260,16 @@
 </header>
 
 <div class="ad-disclosure">
-  <div class="wrap">Advertisement &middot; This is a paid promotion, not editorial content</div>
+  <div class="wrap">Published on <span id="pubDate">September 25, 2026</span></div>
 </div>
+<script>
+(function(){
+  /* data de publicacao = data atual do visitante (atualiza sozinha) */
+  var M=['January','February','March','April','May','June','July','August','September','October','November','December'];
+  var d=new Date(), el=document.getElementById('pubDate');
+  if(el) el.textContent = M[d.getMonth()]+' '+d.getDate()+', '+d.getFullYear();
+})();
+</script>
 
 <script>
 (function(){
